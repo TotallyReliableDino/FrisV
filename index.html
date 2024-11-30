@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Portfolio Maker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Element Panel --> 
+    <div class="element-panel menu">
+      <h3>Elements</h3>
+      <button onclick="addElement('text')">Add Text</button>
+      <button onclick="addElement('image')">Add Image</button>
+      <button onclick="addElement('button')">Add Button</button>
+    </div>
+
+    <!-- Canvas -->
+    <div class="canvas" id="canvas">
+    </div>
+
+    <!-- Editing Panel -->
+    <div class="edit-panel menu" id="edit-panel">
+      <h3>Edit Element</h3>
+      <div class="edit-options" id="edit-options">
+        <p>Select an element to edit</p>
+      </div>
+      <div>
+      <button id="delete-btn">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+      <button id="openWindowBtn">
+         <i class="fa-solid fa-play"></i>
+      </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="js/window.js"></script>
+</body>
+</html>

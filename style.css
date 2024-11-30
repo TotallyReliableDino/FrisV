@@ -1,0 +1,202 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f9; /* Subtle contrast for background */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Ensures panels and canvas fill the viewport */
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Panels */
+.element-panel, .edit-panel {
+  width: 20%;
+  background-color: #f8f9fa; /* Slightly lighter background */
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto; /* Scrollable if content overflows */
+}
+
+.element-panel h3, .edit-panel h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* Buttons */
+.menu button {
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #0056b3;
+}
+
+.menu button:active {
+  background-color: #003d80;
+}
+
+#delete-btn {
+  background-color: #dc3545;
+  font-weight: bold;
+}
+
+#delete-btn:hover {
+  background-color: #b52a37;
+}
+
+#openWindowBtn {
+  background-color: #2AC43B;
+  font-weight: bold;
+}
+
+#openWindowBtn:hover {
+  background-color: #2AB547;
+}
+
+/* Edit Options */
+.edit-options {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  color: #333;
+  font-size: 0.95em;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.edit-options p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.edit-options input, .edit-options select, .edit-options textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.edit-options input:focus, .edit-options select:focus, .edit-options textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* Canvas */
+.canvas {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Canvas Element Defaults */
+.canvas .element {
+  border: 1px dashed #007bff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  color: #333;
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.canvas .element:hover {
+  background-color: #eef6ff;
+  border-color: #0056b3;
+}
+
+.canvas .element:active {
+  cursor: grabbing;
+}
+
+/* Drag-and-Drop Placeholder */
+.canvas .placeholder {
+  border: 2px dashed #aaa;
+  background-color: #f1f1f1;
+  height: 60px;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+
+/* Tooltips */
+button[title] {
+  position: relative;
+}
+
+button[title]::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+button[title]:hover::after {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .element-panel, .edit-panel {
+    width: 100%;
+  }
+
+  .canvas {
+    height: 300px;
+  }
+}

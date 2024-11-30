@@ -1,0 +1,197 @@
+[
+  {
+    "label": "Text",
+    "tag": "div",
+    "defaultContent": "edit this text",
+    "settings": [
+      {
+        "name": "Text",
+        "type": "text",
+        "target": "innerText"
+      },
+      {
+        "name": "Color",
+        "type": "color",
+        "target": "style.color"
+      },
+      {
+        "name": "Font Size",
+        "type": "number",
+        "target": "style.fontSize",
+        "unit": "px"
+      },
+      {
+        "name": "Font Family",
+        "type": "text",
+        "target": "style.fontFamily"
+      }
+    ]
+  },
+  {
+    "label": "Image",
+    "tag": "img",
+    "defaultContent": "https://via.placeholder.com/150",
+    "settings": [
+      {
+        "name": "Image Source",
+        "type": "text",
+        "target": "src"
+      },
+      {
+        "name": "Width",
+        "type": "number",
+        "target": "style.width",
+        "unit": "px"
+      },
+      {
+        "name": "Height",
+        "type": "number",
+        "target": "style.height",
+        "unit": "px"
+      },
+      {
+        "name": "Border",
+        "type": "number",
+        "target": "style.borderWidth",
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "label": "Button",
+    "tag": "button",
+    "defaultContent": "Click Me",
+    "settings": [
+      {
+        "name": "Button Text",
+        "type": "text",
+        "target": "innerText"
+      },
+      {
+        "name": "Background Color",
+        "type": "color",
+        "target": "style.backgroundColor"
+      },
+      {
+        "name": "Font Size",
+        "type": "number",
+        "target": "style.fontSize",
+        "unit": "px"
+      },
+      {
+        "name": "Padding",
+        "type": "number",
+        "target": "style.padding",
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "label": "Header",
+    "tag": "h1",
+    "defaultContent": "My Header",
+    "settings": [
+      {
+        "name": "Header Text",
+        "type": "text",
+        "target": "innerText"
+      },
+      {
+        "name": "Background Color",
+        "type": "color",
+        "target": "style.backgroundColor"
+      },
+      {
+        "name": "Text Color",
+        "type": "color",
+        "target": "style.color"
+      },
+      {
+        "name": "Font Size",
+        "type": "number",
+        "target": "style.fontSize",
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "label": "Second Header",
+    "tag": "h2",
+    "defaultContent": "My Header 2",
+    "settings": [
+      {
+        "name": "Header Text",
+        "type": "text",
+        "target": "innerText"
+      },
+      {
+        "name": "Background Color",
+        "type": "color",
+        "target": "style.backgroundColor"
+      },
+      {
+        "name": "Text Color",
+        "type": "color",
+        "target": "style.color"
+      },
+      {
+        "name": "Font Size",
+        "type": "number",
+        "target": "style.fontSize",
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "label": "Paragraph",
+    "tag": "p",
+    "defaultContent": "This is a paragraph.",
+    "settings": [
+      {
+        "name": "Text",
+        "type": "text",
+        "target": "innerText"
+      },
+      {
+        "name": "Font Size",
+        "type": "number",
+        "target": "style.fontSize",
+        "unit": "px"
+      },
+      {
+        "name": "Line Height",
+        "type": "number",
+        "target": "style.lineHeight",
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "label": "Link",
+    "tag": "a",
+    "defaultContent": "Click Here",
+    "settings": [
+      {
+        "name": "Link Text",
+        "type": "text",
+        "target": "innerText"
+      },
+      {
+        "name": "URL",
+        "type": "text",
+        "target": "href"
+      },
+      {
+        "name": "Text Color",
+        "type": "color",
+        "target": "style.color"
+      },
+      {
+        "name": "Font Size",
+        "type": "number",
+        "target": "style.fontSize",
+        "unit": "px"
+      }
+    ]
+  }
+]
