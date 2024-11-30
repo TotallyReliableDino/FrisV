@@ -14,7 +14,7 @@ And more to come!
 ## Getting Started
 
 ### Web
-Go To : weblink.com here
+Go To : https://totallyreliabledino.github.io/FrisV/
 
 To Try It Out!
 
