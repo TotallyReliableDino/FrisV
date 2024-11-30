@@ -13,6 +13,11 @@ And more to come!
 
 ## Getting Started
 
+### Web
+Go To : weblink.com here
+To Try It Out!
+
+### Installation
 1. Clone the repository:
 
 ```bash
